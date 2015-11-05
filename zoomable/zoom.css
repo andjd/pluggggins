@@ -1,0 +1,66 @@
+html, body, section, article,
+h1, h2, p, strong, em, a, ul, li, div {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+
+body {
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: lightgray;
+}
+
+div.zoom img{
+  width: 100%;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+.zoom {
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+  width: 400px;
+  height: auto;
+  background-color: red;
+}
+
+.focusBox {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+
+}
+
+.zoomed-image{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  /*display: none;*/
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.zoomed-image.active{
+  display: block;
+}

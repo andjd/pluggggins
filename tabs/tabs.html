@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>My Cool Website</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="tabs.js"></script>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <figure class="container">
+      <ul class="tabs group" data-content-tabs=".content-tabs">
+        <li><a class="active" href="#pembroke">Pembroke</a></li>
+        <li><a href="#cardigan">Cardigan</a></li>
+        <li><a href="#golden">Golden Retriever</a></li>
+      </ul>
+      <section class="content-tabs">
+        <article id="pembroke" class="active">
+          <p>pembroke</p>
+        </article>
+        <article id="cardigan">
+          <p>cardigan</p>
+        </article>
+        <article id = "golden">
+          <p>golden</p>
+        </article>
+      </section>
+    </figure>
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
